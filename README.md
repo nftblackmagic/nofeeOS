@@ -6,7 +6,7 @@ Make sure you have installed the node js, version 14.xx.xx
 
 open your teminal:
 
-\>> git clone https://github.com/xiaozaa/bidBot.git 
+\>> git clone https://github.com/nftblackmagic/nofeeOS.git 
 
 \>> npm install
 
