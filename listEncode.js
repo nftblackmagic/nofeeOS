@@ -5,8 +5,9 @@ const Network = opensea.Network
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const secret = require('./secret.js');
 const MNEMONIC = secret.MNEMONIC;
-const sample = require("./sample.js");
+const sample = require('./sample.js');
 const para = sample.parameters;
+const config = require('./config.js');
 var Web3 = require('web3');
 var web3 = new Web3(secret.INFURA_URL);
 
@@ -35,11 +36,11 @@ const listItem = async () => {
 
     const listing = await seaport.createSellOrder({
         asset: {
-            tokenId: '529',
-            tokenAddress: '0xe0901883d567f50bdc0f090ebe7d0bb6d1dfe61f',
+            tokenId: config.tokenId,
+            tokenAddress: config.tokenAddress,
         },
-        accountAddress: '0x15DBcD4756aD188456a56a1fa3fD90147881fF75',
-        startAmount: 0.001,
+        accountAddress: config.accountAddress,
+        startAmount: config.startAmount,
         expirationTime
     })
 }

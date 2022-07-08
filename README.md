@@ -2,7 +2,7 @@
 This is a tool to make offer to opensea asset
 
 # install instructions
-Make sure you have installed the node js, version 14.xx.xx
+Make sure you have installed the node js, version 16.xx.xx
 
 open your teminal:
 
